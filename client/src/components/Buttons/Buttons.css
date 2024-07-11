@@ -1,0 +1,35 @@
+/* Styling for the calculator buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+  gap: 10px; /* Spacing between buttons */
+  width: stretch;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  height: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Styling for the calculator button */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer; /* Cursor on hover */
+  transition: background 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.55); /* Lighter background on hover */
+}
+
+button:nth-child(17),
+button:nth-child(18) {
+  grid-column: span 2;
+}
