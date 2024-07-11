@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   const [screen, setScreen] = useState('0');
   const [result, setResult] = useState('');
-  const [screenStyle, setScreenStyle] = useState({ fontSize: '1rem', color: 'gray' });
+  const [screenStyle, setScreenStyle] = useState({ fontSize: '2rem', color: 'white' });
   const [resultStyle, setResultStyle] = useState({ fontSize: '1rem', color: 'gray' });
 
   const buttonNames = [

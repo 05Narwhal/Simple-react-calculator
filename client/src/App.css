@@ -3,6 +3,8 @@
 CSS for basic calculator styles
 ========================
 */
+
+
 .App {
   height: 100vh;
   width: 100vw;
@@ -24,9 +26,10 @@ CSS for basic calculator styles
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   padding: 20px; /* Padding inside the element */
   border-radius: 20px;
-  width: 400px;
-  height: 500px;
+  width: calc(300px + 50px);
+  height: calc(375px + 50px);
   -webkit-backdrop-filter: blur(10px); /* For Safari */
+  margin-bottom: 50px;
 }
 
 p {
