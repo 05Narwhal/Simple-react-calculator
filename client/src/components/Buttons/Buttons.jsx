@@ -15,7 +15,7 @@ function Buttons ({ buttonNames, screen, setScreen, setResult, setScreenStyle, s
                   .replace('÷', '/')).toString();
                 setResult(evalResult);
                 setResultStyle({ fontSize: '2rem', color: 'white' });
-                setScreenStyle({ fontSize: '1.5rem', color: 'gray' });
+                setScreenStyle({ fontSize: '1.35rem', color: 'gray' });
               } catch {
                 setScreen('Error');
                 setResult('');
@@ -24,13 +24,13 @@ function Buttons ({ buttonNames, screen, setScreen, setResult, setScreenStyle, s
               setScreen('0');
               setResult('');
               setScreenStyle({ fontSize: '2rem', color: 'white' });
-              setResultStyle({ fontSize: '1rem', color: 'gray' });
+              setResultStyle({ fontSize: '1.35rem', color: 'gray' });
             } else if (buttonName === 'DEL' || buttonName === 'CE') {
               setScreen(screen.slice(0, -1));
             } else {
               if (buttonName !== '=') {
                 setScreenStyle({ fontSize: '2rem', color: 'white' });
-                setResultStyle({ fontSize: '1rem', color: 'gray' });
+                setResultStyle({ fontSize: '1.35rem', color: 'gray' });
               }
               if (screen.length < charLimit) {
                 if (screen === '0') {
